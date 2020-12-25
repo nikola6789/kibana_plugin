@@ -1,0 +1,29 @@
+{
+  "name": "quality_dashboard",
+  "version": "1.0.0",
+  "description": "Quality Dasboard plugin for EngEx project",
+  "main": "index.js",
+  "kibana": {
+    "version": "kibana"
+  },
+  "scripts": {
+    "preinstall": "node ../../preinstall_check",
+    "kbn": "node ../../scripts/kbn",
+    "es": "node ../../scripts/es",
+    "lint": "../../node_modules/.bin/eslint .",
+    "start": "cd ../.. && node scripts/kibana --dev --oss",
+    "test:server": "../../node_modules/.bin/plugin-helpers test:server",
+    "test:browser": "../../node_modules/.bin/plugin-helpers test:browser",
+    "build": "../../node_modules/.bin/plugin-helpers build"
+  },
+  "dependencies": {
+    "@elastic/eui": "^31.0.0",
+    "@kbn/i18n": "link:../../packages/kbn-i18n"
+  },
+  "devDependencies": {
+    "@elastic/eslint-config-kibana": "link:../../packages/eslint-config-kibana",
+    "@elastic/eslint-import-resolver-kibana": "link:../../packages/kbn-eslint-import-resolver-kibana",
+    "@kbn/expect": "link:../../packages/kbn-expect",
+    "@kbn/plugin-helpers": "link:../../packages/kbn-plugin-helpers"
+  }
+}
