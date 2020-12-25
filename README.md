@@ -1,6 +1,6 @@
 # quality_dashboard
 
-> quality_dashboard plugin for EngEx project.
+> quality_dashboard plugin.
 
 ---
 
